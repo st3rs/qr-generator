@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+  --chart-grid: #e4e4e7;
+  --chart-axis: #a1a1aa;
+  --chart-line: #2563eb;
+  --chart-success: #16a34a;
+  --chart-warning: #f59e0b;
+  --chart-danger: #dc2626;
+}
+
+.dark {
+  --chart-grid: #3f3f46;
+  --chart-axis: #a1a1aa;
+}
+
+body {
+  @apply bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100;
+}
+
+.card {
+  @apply rounded-xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900;
+}
+
+.section-title {
+  @apply text-sm font-semibold uppercase tracking-wide text-zinc-500;
+}
+
+.table-header {
+  @apply text-xs font-semibold uppercase tracking-wide text-zinc-500;
+}
+
+.badge {
+  @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium;
+}
+
+.badge-success {
+  @apply bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300;
+}
+
+.badge-warning {
+  @apply bg-amber-50 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300;
+}
+
+.badge-danger {
+  @apply bg-red-50 text-red-700 dark:bg-red-900/30 dark:text-red-300;
+}
+
+.badge-neutral {
+  @apply bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300;
+}
